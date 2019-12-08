@@ -1,0 +1,8 @@
+C:\Users\oscar\OneDrive\Escritorio\Algoritmia\Proyecto_Final\Presas_Depredadores\Presas_Depredadores\bin\Debug\Presas_Depredadores.exe.config
+C:\Users\oscar\OneDrive\Escritorio\Algoritmia\Proyecto_Final\Presas_Depredadores\Presas_Depredadores\bin\Debug\Presas_Depredadores.exe
+C:\Users\oscar\OneDrive\Escritorio\Algoritmia\Proyecto_Final\Presas_Depredadores\Presas_Depredadores\bin\Debug\Presas_Depredadores.pdb
+C:\Users\oscar\OneDrive\Escritorio\Algoritmia\Proyecto_Final\Presas_Depredadores\Presas_Depredadores\obj\Debug\Presas_Depredadores.csprojResolveAssemblyReference.cache
+C:\Users\oscar\OneDrive\Escritorio\Algoritmia\Proyecto_Final\Presas_Depredadores\Presas_Depredadores\obj\Debug\Presas_Depredadores.exe
+C:\Users\oscar\OneDrive\Escritorio\Algoritmia\Proyecto_Final\Presas_Depredadores\Presas_Depredadores\obj\Debug\Presas_Depredadores.pdb
+C:\Users\oscar\OneDrive\Escritorio\Algoritmia\Proyecto_Final\Presas_Depredadores\Presas_Depredadores\obj\Debug\Presas_Depredadores.MainForm.resources
+C:\Users\oscar\OneDrive\Escritorio\Algoritmia\Proyecto_Final\Presas_Depredadores\Presas_Depredadores\obj\Debug\Presas_Depredadores.csproj.GenerateResource.Cache
