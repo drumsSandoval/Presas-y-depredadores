@@ -24,27 +24,6 @@ namespace Presas_Depredadores
 			
 		}
 		
-		public Graph(List<Edge> listEdges, List<Node> listVertex){
-			Vertex = new List<Node>();
-			foreach(Node n in listVertex){
-				Node node = new Node(n.circle);
-				Vertex.Add(node);
-			}
-			Edge e;
-			int cont=0;
-			for(int i=0;i<Vertex.Count;i++){
-				for(int j=0;j<listEdges.Count;j++){
-					e = listEdges[j];
-					if(e.Destino.circle.Id == Vertex[i].circle.Id){
-						List<Point> l = new List<Point>(e.Road);
-						l.Reverse();
-						Vertex[i].Edges.Add(new Edge(Vertex[e.Destino.circle.Id-1],Vertex[e.Origen.circle.Id-1],++cont,l,e.Weight));
-						Vertex[e.Origen.circle.Id-1].Edges.Add(new Edge(Vertex[e.Origen.circle.Id-1],Vertex[e.Destino.circle.Id-1],++cont,e.Road,e.Weight));
-					}
-				}
-			}
-		}
-		
 		public Graph(List<Circle> l, Bitmap bmp){
 			this.Vertex = new List<Node>();
 			colors = new List<Color>();

@@ -59,6 +59,7 @@ namespace Presas_Depredadores
             int distY = Math.Abs((v1.Y - v2.Y));
             return Math.Sqrt(Math.Pow(distX, 2) + Math.Pow(distY, 2));
         }
+		
 // DIJKSTRA
 		public static List<Dijkstra> Dijkrstra(Node v_i,List<Node> Vertex){
 			List<Dijkstra> V_Dijkstra = new List<Dijkstra>();
@@ -109,9 +110,23 @@ namespace Presas_Depredadores
 				aux = V_Dijkstra.Find(d => d.vertex == e.Destino);
 			 	if(aux.weight > elem.weight+e.Weight){
 					aux.weight = e.Weight+elem.weight;
-					aux.father = e;
+					aux.father = e.Origen;
 				}
 			}
+		}
+		public static List<int> GetWay(Node v_i, Node v_d, List<Dijkstra>l){
+			Dijkstra d = l.Find(e => e.vertex == v_d);
+			if(d.weight == double.MaxValue){
+				return null;
+			}
+			List<int> way = new List<int>();
+			way.Add(d.vertex.circle.Id);
+			while(d.vertex != v_i){
+				d = l.Find(e => e.vertex == d.father);
+				way.Add(d.vertex.circle.Id);
+			}
+			way.Reverse();
+			return way;
 		}
 	
 
@@ -122,7 +137,7 @@ namespace Presas_Depredadores
 	public class Dijkstra{
 		public Node vertex{get;set;}
 		public double weight{get;set;}
-		public Edge father{get;set;}
+		public Node father{get;set;}
 		public bool finish{get;set;}
 		public Dijkstra(Node vertex){
 			this.vertex=vertex;

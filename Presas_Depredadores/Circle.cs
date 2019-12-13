@@ -43,7 +43,7 @@ namespace Presas_Depredadores
 		}
 		
 		public static void DrawCircle(Circle circle,Color color,Bitmap CloneBmp){
-			for(int y = circle.Top.Y-1;y<=circle.Down.Y+1;y++){
+			for(int y = circle.Top.Y-3;y<=circle.Down.Y+3;y++){
 				int x_der = circle.Top.X;
 				int x_izq = circle.Top.X-1;
 				while(CloneBmp.GetPixel(x_der,y).ToArgb() != Color.White.ToArgb() && CloneBmp.GetPixel(x_der,y).ToArgb() != Color.DarkBlue.ToArgb()){
